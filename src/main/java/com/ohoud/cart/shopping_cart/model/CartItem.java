@@ -1,0 +1,24 @@
+package com.ohoud.cart.shopping_cart.model;
+
+public class CartItem {
+    private Product product;
+    private int quantity;
+
+    public CartItem(Product product, int quantity) {
+        this.product = product;
+        this.quantity = quantity;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public double getSubtotal() {
+        double priceWithTax = product.getPrice() + (product.getPrice() * product.getTaxRate());
+        return priceWithTax * quantity;
+    }
+}
