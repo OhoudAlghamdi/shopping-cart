@@ -48,7 +48,7 @@ GET /products/{id}
 Like: GET /products/3
 
 ### Update Product
-نسخ
+
 PUT/products/{id}
 
 json
@@ -59,7 +59,7 @@ json
   "taxRate": 0.07,
   "quantity": 80
 }
-نسخ  
+
 ###  Delete Product
 
 DELETE /products/{id}
