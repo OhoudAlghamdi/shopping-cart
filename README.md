@@ -49,7 +49,7 @@ Like: GET /products/3
 
 ### Update Product
 نسخ
-PUT /products/{id}
+PUT/products/{id}
 
 json
 {
